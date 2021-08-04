@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
+import Layout from '../../components/Layout';
 
 export default function primerPost() {
     return (
-        <div>
+        <Layout title = 'about | nex.js' description="agregue descripcion">
             <Head>
                 <title>Este es mi primer Post</title>
                 <meta 
@@ -24,6 +25,6 @@ export default function primerPost() {
             </Link>
             <br></br>
             <a href="/">Volver al inicio2(Paginas externas)</a>
-        </div>
+        </Layout>
     )
 }

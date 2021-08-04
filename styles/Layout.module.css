@@ -1,0 +1,19 @@
+/** aca solo se puede usar clases o id 
+para cambiar las etiquetas pre definidas(H1, p, span, etc..) se debe realizar en el styles/globals
+**/
+
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
