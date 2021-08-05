@@ -1,3 +1,5 @@
+import Layout from '../components/Layout';
+
 export default function blog2() {
     return (
         <Layout title = 'about | nex.js' description="agregue descripcion">
