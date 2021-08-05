@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout';
+import Link from 'next/link';
 
 export default function index({data}) {
     return (
@@ -7,7 +8,11 @@ export default function index({data}) {
             {
                 data.map(({id, title, body}) => (
                     <div key={id}>
-                        <h3>{id} - {title}</h3>
+                        <h3>
+                            <Link href={`/blog/${id}`}>
+                                <a>{id} - {title}</a>
+                            </Link>
+                        </h3>
                         <p>{body}</p>
                     </div>
                 ))
@@ -20,17 +25,17 @@ export default function index({data}) {
 export async function getStaticProps(){
 
     try{
-  
-      const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-      const data = await res.json();
-  
-      return {
+
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const data = await res.json();
+
+        return {
         props: {
-          data
+            data
         }
-      }
-  
+        }
+
     } catch(error){
-      console.log(error);
+        console.log(error);
     }
-  }
+}

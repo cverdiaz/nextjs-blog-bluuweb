@@ -9,7 +9,7 @@ import utilStyles from '../styles/utils.module.css';
 const name = "bluuweb";
 
 export default function Layout({children, title, descripcion, home}) {
-    console.log(home);
+    //console.log(home);
     return (
         <div className={styles.container}>
             <link rel="icon" href="/favicon.ico" />
@@ -69,7 +69,7 @@ export default function Layout({children, title, descripcion, home}) {
                     <Link href="/about">
                         <a>About | </a>
                     </Link>
-                    <Link href="blog/primer-post">
+                    <Link href="/blog/primer-post">
                         <a>Mi primer Post</a>
                     </Link>
                 </nav>
