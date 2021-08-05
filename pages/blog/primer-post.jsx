@@ -24,7 +24,8 @@ export default function primerPost() {
                 <a>Volver al Inicio(Paginas Locales)</a>
             </Link>
             <br></br>
-            <a href="/">Volver al inicio2(Paginas externas)</a>
         </Layout>
     )
 }
+
+/** <a href="/">Volver al inicio2(Paginas externas)</a>  */
