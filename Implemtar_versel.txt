@@ -4,3 +4,10 @@ Implementar el proyecto en Vercel
 2- seleccionar el proyecto que quiere importar, donde le pedira que instalar Vercel para GitHub
 3- luego usted podra seleccionar su proyecto de github que quiere montar y le pedira crear un team para que varias personas puedan trabajar desde ese proyecto
 4- luego debera ingresar un nombre de su aplicacion y presionar el boton desplegar, y esperar hasta que termine de ejecutarse y le aparesca la pantalla con los felicitaciones, "su proyecto creado"
+
+ejecutar
+
+npx run dev //sirve para correr un servidor y poder ver la pagina
+
+local: http://localhost:3000/
+nube: https://nextjs-blog-bluuweb.vercel.app/
